@@ -13,7 +13,10 @@ module.exports = {
       'light-blue': '#418AF7',
       'blue': '#1D65C1',
       'dark-gray-text': '#344854',
+      'light-gray-text': '#FEFEFE',
+      'gray-text-secondary': '#67788a',
       'button-gray': '#E8F0F9',
+      'transparent': 'transparent',
     },
     screens: {
       'sm-min': '640px',
