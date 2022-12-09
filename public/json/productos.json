@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "idCategoria": 1,
+        "idCategoria": "quest",
         "nombre": "Meta Quest Pro",
         "descripcion": "La tecnología de visor más avanzada mejora el trabajo, la creatividad y la colaboración.",
         "detalle": "Nuestro visor más avanzado hasta el momento. Una forma completamente nueva de trabajar, crear y colaborar.",
@@ -14,7 +14,7 @@
     },
     {
         "id": 2,
-        "idCategoria": 1,
+        "idCategoria": "quest",
         "nombre": "Meta Quest 2",
         "descripcion": "Este visor de vanguardia está repleto de todo tipo de experiencias de juego divertidas y emocionantes.",
         "detalle": "Cientos de juegos destacados, experiencias únicas y una comunidad de usuarios en crecimiento te esperan en Meta Quest 2.",
@@ -27,7 +27,7 @@
     },
     {
         "id": 3,
-        "idCategoria": 2,
+        "idCategoria": "portal",
         "nombre": "Meta Portal TV",
         "descripcion": "Habla con tus personas favoritas en la pantalla más grande que tengas.",
         "detalle": "Ve a tus seres queridos con más claridad en esta época tan especial y durante todo el año.",
@@ -40,7 +40,7 @@
     },
     {
         "id": 4,
-        "idCategoria": 2,
+        "idCategoria": "portal",
         "nombre": "Meta Portal 10",
         "descripcion": "Pantalla de 10 pulgadas diseñada para adaptarse a tu hogar.",
         "detalle": "Siente que estás ahí en los momentos más importantes y todos los días.",
@@ -53,7 +53,7 @@
     },
     {
         "id": 5,
-        "idCategoria": 2,
+        "idCategoria": "portal",
         "nombre": "Meta Portal Go",
         "descripcion": "Una batería incorporada y una pantalla de 10 pulgadas que puedes trasladar a cualquier habitación.",
         "detalle": "Compra un Meta Portal Go y obtén una base de carga para Portal Go adicional gratis cuando lo agregues al carrito*.",
@@ -66,7 +66,7 @@
     },
     {
         "id": 6,
-        "idCategoria": 2,
+        "idCategoria": "portal",
         "nombre": "Meta Portal Plus",
         "descripcion": "Una pantalla de 14 pulgadas para vivir intensamente cada momento.",
         "detalle": "Celebra con tus seres queridos, estén lejos o cerca.",
@@ -79,7 +79,7 @@
     },
     {
         "id": 7,
-        "idCategoria": 3,
+        "idCategoria": "glasses",
         "nombre": "Ray-Ban Stories | Wayfarer",
         "descripcion": "Un marco clásico ideal para cualquier época.",
         "detalle": "Mantente en el momento con un auténtico ícono de la moda",
@@ -92,7 +92,7 @@
     },
     {
         "id": 8,
-        "idCategoria": 3,
+        "idCategoria": "glasses",
         "nombre": "Ray-Ban Stories | Round",
         "descripcion": "Los lentes que eligen desde siempre pensadores y soñadores célebres.",
         "detalle": "Captura todas las aventuras mientras las vives",
@@ -105,7 +105,7 @@
     },
     {
         "id": 9,
-        "idCategoria": 3,
+        "idCategoria": "glasses",
         "nombre": "Ray-Ban Stories | Meteor",
         "descripcion": "Diseñado en la década de 1960 como la versión angular de un clásico.",
         "detalle": "Captura el mundo tal como lo ves",

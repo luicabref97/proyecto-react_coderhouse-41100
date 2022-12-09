@@ -14,7 +14,7 @@ const ItemListContainer = () => {
         if(category) {
             const timer = setTimeout(() => {
                 consultarBDD('../json/productos.json').then(products => {
-                    const productList = products.filter(prod => prod.stock > 0).filter(prod => prod.idCategoria === parseInt(category))
+                    const productList = products.filter(prod => prod.stock > 0).filter(prod => prod.idCategoria === category)
                     const cardProductos = ItemList({productList})
                     setProductos(cardProductos)
                 })

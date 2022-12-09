@@ -50,15 +50,15 @@ return (
                         </Link>
                         <NavCategories
                             titulo ="Realidad Virtual"
-                            ruta ="/category/1"
+                            ruta ="/category/quest"
                         />
                         <NavCategories
                             titulo ="Videollamadas"
-                            ruta ="/category/2"
+                            ruta ="/category/portal"
                         />
                         <NavCategories
                             titulo ="Lentes inteligentes"
-                            ruta ="/category/3"
+                            ruta ="/category/glasses"
                         />
                     </div>
                 </li>
