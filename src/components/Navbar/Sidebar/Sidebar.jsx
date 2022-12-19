@@ -33,11 +33,11 @@ const Sidebar = () => {
                     </div>
                     <hr className='w-full text-light-gray'/>
                     <div className='min-w-0 flex flex-col h-full min-h-0'>
-                        <SideCategories titulo="Realidad Virtual" ruta="/category/1"/>
+                        <SideCategories titulo="Realidad Virtual" ruta="/category/quest"/>
                         <hr className='w-full text-light-gray'/>
-                        <SideCategories titulo="Videollamadas" ruta="/category/2"/>
+                        <SideCategories titulo="Videollamadas" ruta="/category/portal"/>
                         <hr className='w-full text-light-gray'/>
-                        <SideCategories titulo="Lentes Inteligentes" ruta="/category/3"/>
+                        <SideCategories titulo="Lentes Inteligentes" ruta="/category/glasses"/>
                         <hr className='w-full text-light-gray'/>
                     </div>
                 </nav>

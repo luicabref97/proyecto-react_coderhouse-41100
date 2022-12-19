@@ -4,7 +4,6 @@ import ItemCount from '../ItemCount/ItemCount'
 const ItemDetail = ({item}) => {
     const simboloDivisa = "$"
     const divisa = "USD"
-    console.log(item)
     return (
         <>
             <div className='lg-min:absolute lg-min:block lg-min:top-0 lg-min:w-full lg-min:left-0 lg-min:h-full min-w-0 min-h-0 flex md:absolute md:block md:h-full md:top-0 md:w-full md:left-0 sm-max:block sm-max:absolute sm-max:h-full sm-max:w-full sm-max:left-0 sm-max:top-0'>
