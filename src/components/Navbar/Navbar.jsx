@@ -2,13 +2,15 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import CartWidget from "../CartWidget/CartWidget"
 import logo from "../../assets/images/logo.svg"
-import lightMode from "../../assets/images/light-mode.svg"
-import darkMode from "../../assets/images/dark-mode.svg"
+import logoLight from "../../assets/images/logo-2.svg"
+import lightModeIcon from "../../assets/images/light-mode.svg"
+import darkModeIcon from "../../assets/images/dark-mode.svg"
 import NavCategories from "./Categories/NavCategories"
 import Sidebar from './Sidebar/Sidebar'
+import { useDarkModeContext } from '../../Context/DarkModeContext'
 
-const Navbar = () => {
-let ubicacionPrincipal = window.scrollY
+const Navbar = (props) => {
+    let ubicacionPrincipal = window.scrollY
     window.onscroll = function() {
         let desplazamientoActual = window.scrollY
         if(ubicacionPrincipal >= desplazamientoActual) {
@@ -20,24 +22,25 @@ let ubicacionPrincipal = window.scrollY
         }
         ubicacionPrincipal = desplazamientoActual
     }
+    const {toggleDarkMode} = useDarkModeContext()
+    const {darkMode} = useDarkModeContext()
 return (
     <>
-        <nav id='navbar' className="bg-white fixed top-0 left-0 w-full border-b border-b-light-gray text-base text-dark-blue transition-all duration-300 z-20">
-            <div className="md-max:items-center md-max:bg-white md-max:flex md-max:h-20 md-max:justify-between md-max:py-0 md-max:px-6 md-max:w-full lg-min:hidden">
+        <nav id='navbar' className={` fixed top-0 left-0 w-full border-b border-b-light-gray text-base transition-all duration-300 z-20 ${darkMode ? "bg-dark-blue text-white border-b-gray-text-secondary" : "bg-white text-dark-gray-text"}`}>
+            <div className={`md-max:items-center md-max:flex md-max:h-20 md-max:justify-between md-max:py-0 md-max:px-6 md-max:w-full lg-min:hidden transition-all duration-300 ${darkMode ? "md-max:bg-dark-blue text-white" : "md-max:bg-white text bg-dark-gray-text"}`}>
                 <Sidebar/>
                 <Link to="/">
                     <picture className="mt-1 inline-block overflow-hidden relative">
-                        <img src={logo} alt="logo"/>
+                        <img src={darkMode ? logoLight : logo} alt="Meta"/>
                     </picture>
                 </Link>
                 <ul className="flex items-center flex-wrap">
                     <li className="h-20 flex items-center">
-                        <div className="overflow-hidden inline-block relative cursor-pointer">
-                            <img className="hidden" src={lightMode} alt="lightMode"/>
-                            <img src={darkMode} alt="lightMode"/>
-                        </div>
+                        <button className="overflow-hidden inline-block relative cursor-pointer">
+                            <img onClick={()=>toggleDarkMode()} src={darkMode ? lightModeIcon  : darkModeIcon} alt={darkMode ? "lightMode" : "darkMode"}/>
+                        </button>
                     </li>
-                    <li className="border-l border-l-light-gray ml-4 pl-4">
+                    <li className={`border-l ml-4 pl-4 ${darkMode ? "border-l-gray-text-secondary" : "border-l-light-gray"}`}>
                         <CartWidget/>
                     </li>
                 </ul>
@@ -46,7 +49,7 @@ return (
                 <li className="list-item">
                     <div className="flex items-center flex-wrap">
                         <Link to='/' className="mt-1 mr-8 inline-block overflow-hidden relative">
-                            <img src={logo} alt="logo"/>
+                            <img src={darkMode ? logoLight : logo} alt="Meta"/>
                         </Link>
                         <NavCategories
                             titulo ="Realidad Virtual"
@@ -65,12 +68,11 @@ return (
                 <li className="list-item">
                     <ul className="flex items-center flex-wrap">
                         <li className="h-20 pl-6 flex items-center">
-                            <div className="overflow-hidden inline-block relative cursor-pointer">
-                                <img className="hidden" src={lightMode} alt="lightMode"/>
-                                <img src={darkMode} alt="lightMode"/>
-                            </div>
+                            <button className="overflow-hidden inline-block relative cursor-pointer">
+                                <img onClick={()=>toggleDarkMode()} src={darkMode ? lightModeIcon : darkModeIcon} alt={darkMode ? "lightMode" : "darkMode"}/>
+                            </button>
                         </li>
-                        <li className="border-l border-l-light-gray ml-4 pl-4">
+                        <li className={`border-l ml-4 pl-4 ${darkMode ? "border-l-gray-text-secondary" : "border-l-light-gray"}`}>
                             <CartWidget/>
                         </li>
                     </ul>

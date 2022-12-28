@@ -7,10 +7,10 @@
         "detalle": "Nuestro visor más avanzado hasta el momento. Una forma completamente nueva de trabajar, crear y colaborar.",
         "precio": 1499.99,
         "stock": 30,
-        "img": "../img/metaquestpro.jpg",
-        "srcset1": "../img/questpro-src1.jpg",
-        "srcset2": "../img/questpro-src2.jpg",
-        "imgbg": "../img/questpro-bg.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/metaquestpro-removebg-preview.png?alt=media&token=f4c20126-2499-4215-8400-b172ca7ad96b",
+        "srcset1": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/questpro-src1.jpg?alt=media&token=782acb1a-fcba-48cb-b3f8-c9e6a27334fc",
+        "srcset2": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/questpro-src2.jpg?alt=media&token=94046996-f8ae-42db-bd74-4de026fc1ad7",
+        "imgbg": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/questpro-bg.jpg?alt=media&token=4ac7d021-dbb2-41aa-9403-18d22a5fb438"
     },
     {
         "id": 2,
@@ -20,10 +20,10 @@
         "detalle": "Cientos de juegos destacados, experiencias únicas y una comunidad de usuarios en crecimiento te esperan en Meta Quest 2.",
         "precio": 399.99,
         "stock": 20,
-        "img": "../img/metaquest2.jpg",
-        "srcset1": "../img/quest2-src1.jpg",
-        "srcset2": "../img/quest2-src2.jpg",
-        "imgbg": "../img/quest2-bg.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/metaquest2-removebg-preview.png?alt=media&token=4b655d89-2296-4c48-8583-b7773142c220",
+        "srcset1": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/quest2-src1.jpg?alt=media&token=cc886764-828f-4b5a-96d5-2eaaeb4bbf61",
+        "srcset2": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/quest2-src2.jpg?alt=media&token=c217afef-af26-49ea-985e-53ef9d8bbe57",
+        "imgbg": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/quest2-bg.jpg?alt=media&token=6b84a6e9-af24-42b3-8148-da649ce39f91"
     },
     {
         "id": 3,
@@ -33,10 +33,10 @@
         "detalle": "Ve a tus seres queridos con más claridad en esta época tan especial y durante todo el año.",
         "precio": 49,
         "stock": 15,
-        "img": "../img/television.png",
-        "srcset1": "../img/portaltv-src1.jpg",
-        "srcset2": "../img/portaltv-src2.jpg",
-        "imgbg": "../img/portaltv-bg.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/television.png?alt=media&token=846e3855-b0f6-42c8-8c24-6fe59fd782b8",
+        "srcset1": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/portaltv-src1.jpg?alt=media&token=a85e5bdc-4176-4eca-8ff4-11b5b69705b8",
+        "srcset2": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/portaltv-src2.jpg?alt=media&token=f8a5ca22-c67f-408d-9cfd-d4fc38788591",
+        "imgbg": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/portaltv-bg.jpg?alt=media&token=5044f1d5-2d44-494b-af00-ff5752edd838"
     },
     {
         "id": 4,
@@ -46,10 +46,10 @@
         "detalle": "Siente que estás ahí en los momentos más importantes y todos los días.",
         "precio": 49,
         "stock": 30,
-        "img": "../img/10in.png",
-        "srcset1": "../img/portal10-src1.jpg",
-        "srcset2": "../img/portal10-src2.jpg",
-        "imgbg": "../img/portal10-bg.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/10in.png?alt=media&token=3eae0924-f962-49b2-afea-880c20fa913b",
+        "srcset1": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/portal10-src1.jpg?alt=media&token=e83a0d32-b361-4f7c-82a4-d28c28ee63bc",
+        "srcset2": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/portal10-src2.jpg?alt=media&token=5a3bb3c7-8c97-4b6c-a688-06f0a636841a",
+        "imgbg": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/portal10-bg.jpg?alt=media&token=df7ac85a-3067-4920-ba43-3445ec04c0d4"
     },
     {
         "id": 5,
@@ -59,10 +59,10 @@
         "detalle": "Compra un Meta Portal Go y obtén una base de carga para Portal Go adicional gratis cuando lo agregues al carrito*.",
         "precio": 79,
         "stock": 7,
-        "img": "../img/go.png",
-        "srcset1": "../img/portalgo-src1.jpg",
-        "srcset2": "../img/portalgo-src2.jpg",
-        "imgbg": "../img/portalgo-bg.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/go.png?alt=media&token=b095301d-d0d4-4c92-900b-1fdd948ad962",
+        "srcset1": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/portalgo-src1.jpg?alt=media&token=708b9c1d-0e3c-4399-9bce-4d31a0ddc755",
+        "srcset2": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/portalgo-src2.jpg?alt=media&token=4b3ac84c-be04-415a-a646-9949246583d1",
+        "imgbg": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/portalgo-bg.jpg?alt=media&token=5de726ad-ee3a-4d11-b271-5ddd1b22582f"
     },
     {
         "id": 6,
@@ -72,10 +72,10 @@
         "detalle": "Celebra con tus seres queridos, estén lejos o cerca.",
         "precio": 299,
         "stock": 20,
-        "img": "../img/plus.png",
-        "srcset1": "../img/portalplus-src1.jpg",
-        "srcset2": "../img/portalplus-src2.jpg",
-        "imgbg": "../img/portalplus-bg.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/plus.png?alt=media&token=595d2733-d47d-452d-b0d3-16c639126a41",
+        "srcset1": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/portalplus-src1.jpg?alt=media&token=2e188bd0-e520-4153-9a88-b9da8aa17ec4",
+        "srcset2": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/portalplus-src2.jpg?alt=media&token=5e7ca22f-afb0-4d3b-a715-8c915e7b3801",
+        "imgbg": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/portalplus-bg.jpg?alt=media&token=c54de56b-c137-4180-b28e-985c1a3eb487"
     },
     {
         "id": 7,
@@ -85,10 +85,10 @@
         "detalle": "Mantente en el momento con un auténtico ícono de la moda",
         "precio": 299,
         "stock": 10,
-        "img": "../img/rayban-wayfarer.png",
-        "srcset1": "../img/wayfarer-src1.jpg",
-        "srcset2": "../img/wayfarer-src2.jpg",
-        "imgbg": "../img/wayfarer-bg.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/rayban-wayfarer.png?alt=media&token=2cc9a2d6-598f-47be-8ab2-7cc57c2709ac",
+        "srcset1": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/wayfarer-src1.jpg?alt=media&token=dbb336fb-facb-4329-958b-840791e695e4",
+        "srcset2": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/wayfarer-src2.jpg?alt=media&token=c3cfb3ed-bca5-4705-9fff-5b1653439858",
+        "imgbg": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/wayfarer-bg.jpg?alt=media&token=fb76a706-ed19-4089-9e3b-2cc8d426278f"
     },
     {
         "id": 8,
@@ -98,10 +98,10 @@
         "detalle": "Captura todas las aventuras mientras las vives",
         "precio": 329,
         "stock": 30,
-        "img": "../img/rayban-round.png",
-        "srcset1": "../img/round-src1.jpg",
-        "srcset2": "../img/round-src2.jpg",
-        "imgbg": "../img/round-bg.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/rayban-round.png?alt=media&token=96950828-5eb5-4091-ac1a-15e0fe25a481",
+        "srcset1": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/round-src1.jpg?alt=media&token=a8bdfe69-d207-4f02-9b3d-b74babf15bbb",
+        "srcset2": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/round-src2.jpg?alt=media&token=ccc08506-c961-4bab-8eb1-6da84cd98506",
+        "imgbg": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/round-bg.jpg?alt=media&token=69a474f3-3a1d-4471-88ba-fe2e852cbc90../img/round-bg.jpg"
     },
     {
         "id": 9,
@@ -111,9 +111,9 @@
         "detalle": "Captura el mundo tal como lo ves",
         "precio": 379,
         "stock": 21,
-        "img": "../img/rayban-meteor.png",
-        "srcset1": "../img/meteor-src1.jpg",
-        "srcset2": "../img/meteor-src2.jpg",
-        "imgbg": "../img/meteor-bg.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/rayban-meteor.png?alt=media&token=5300298a-9204-400c-a9e7-c578b5f37c0d",
+        "srcset1": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/meteor-src1.jpg?alt=media&token=46846cc4-ff56-4560-8c1a-16f64e82b907",
+        "srcset2": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/meteor-src2.jpg?alt=media&token=338ed9f4-880d-4a71-a44e-076ac4ad50f4",
+        "imgbg": "https://firebasestorage.googleapis.com/v0/b/react-2022-86663.appspot.com/o/meteor-bg.jpg?alt=media&token=d6caa967-b055-4570-a78e-da950a2caa0e"
     }
 ]
