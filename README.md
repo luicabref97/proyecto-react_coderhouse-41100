@@ -13,7 +13,7 @@ Permite seleccionar ciertos productos, visualizar los detalles de los mismos, ag
 - [React] (https://reactjs.org/) - Framework de Javascript
 - [Firestore] (https://firebase.google.com/) - NoSQL Database
 - [Tailwindcss] (https://tailwindcss.com/) - Framework de CSS
-- [React-Toastify] (https://fkhadra.github.io/react-toastify/introduction/) - Framework de CSS
+- [React-Toastify] (https://fkhadra.github.io/react-toastify/introduction/) - Librería de notificaciones de vanilla JS
 
 ## Descargar y correr el proyecto
 
