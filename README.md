@@ -10,10 +10,10 @@ Permite seleccionar ciertos productos, visualizar los detalles de los mismos, ag
 
 ### Tecnologias utilizadas 🛠️
 
-[React] (https://reactjs.org/) - Framework de Javascript
-[Firestore] (https://firebase.google.com/) - NoSQL Database
-[Tailwindcss] (https://tailwindcss.com/) - Framework de CSS
-[React-Toastify] (https://fkhadra.github.io/react-toastify/introduction/) - Framework de CSS
+- [React] (https://reactjs.org/) - Framework de Javascript
+- [Firestore] (https://firebase.google.com/) - NoSQL Database
+- [Tailwindcss] (https://tailwindcss.com/) - Framework de CSS
+- [React-Toastify] (https://fkhadra.github.io/react-toastify/introduction/) - Framework de CSS
 
 ## Descargar y correr el proyecto
 
@@ -46,14 +46,21 @@ Luego continuar con el paso 3 de la otra forma
 ## Despliegue
 
 El proyecto fue desplegado en Vercel para navegarlo.
-https://rodolfosbeerandburguer.vercel.app/ La pagina esta adaptada para que se visualice correctamente en todos los dispositivos.
+https://proyecto-react-coderhouse-41100.vercel.app/ La pagina esta adaptada para que se visualice correctamente en todos los dispositivos.
 
 ## Screenshots
 
-![Alt text](https://github.com/martin086/react-app/blob/master/docs/Screenshot_1.png "Home")
-![Alt text](https://github.com/martin086/react-app/blob/master/docs/Screenshot_2.png "Category")
-![Alt text](https://github.com/martin086/react-app/blob/master/docs/Screenshot_3.png "ItemDetail")
-![Alt text](https://github.com/martin086/react-app/blob/master/docs/Screenshot_4.png "Cart")
-![Alt text](https://github.com/martin086/react-app/blob/master/docs/Screenshot_5.png "Checkout")
-![Alt text](https://github.com/martin086/react-app/blob/master/docs/Screenshot_6.png "OC_Confirmed")
+![Alt text](https://github.com/luicabref97/proyecto-react_coderhouse-41100/blob/master/docs/Screenshot_1.png "Home-1")
+![Alt text](https://github.com/luicabref97/proyecto-react_coderhouse-41100/blob/master/docs/Screenshot_2.png "Home-2")
+![Alt text](https://github.com/luicabref97/proyecto-react_coderhouse-41100/blob/master/docs/Screenshot_3.png "Home-3")
+![Alt text](https://github.com/luicabref97/proyecto-react_coderhouse-41100/blob/master/docs/Screenshot_7.png "Home-DarkMode")
+![Alt text](https://github.com/luicabref97/proyecto-react_coderhouse-41100/blob/master/docs/Screenshot_4.png "Category-1")
+![Alt text](https://github.com/luicabref97/proyecto-react_coderhouse-41100/blob/master/docs/Screenshot_5.png "Category-2")
+![Alt text](https://github.com/luicabref97/proyecto-react_coderhouse-41100/blob/master/docs/Screenshot_6.png "Category-3")
+![Alt text](https://github.com/luicabref97/proyecto-react_coderhouse-41100/blob/master/docs/Screenshot_8.png  "ItemDetail-1")
+![Alt text](https://github.com/luicabref97/proyecto-react_coderhouse-41100/blob/master/docs/Screenshot_9.png  "ItemDetail-2")
+![Alt text](https://github.com/luicabref97/proyecto-react_coderhouse-41100/blob/master/docs/Screenshot_10.png "Cart")
+![Alt text](https://github.com/luicabref97/proyecto-react_coderhouse-41100/blob/master/docs/Screenshot_11.png "Checkout-1")
+![Alt text](https://github.com/luicabref97/proyecto-react_coderhouse-41100/blob/master/docs/Screenshot_12.png "Checkout-2")
+![Alt text](https://github.com/luicabref97/proyecto-react_coderhouse-41100/blob/master/docs/Screenshot_13.png "OC_Confirmed")
 
