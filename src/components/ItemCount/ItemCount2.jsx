@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import Btn1 from '../Buttons/Btn1'
+import { Slide, toast } from 'react-toastify'
 const ItemCount2 = ({inicial, stock , onAdd}) => {
     const [contador, setContador] = useState(inicial)
 
@@ -14,7 +15,20 @@ const ItemCount2 = ({inicial, stock , onAdd}) => {
             setContador(contador - 1)
         }
     } 
-    const agrerarAlCarrito = () => onAdd(contador)
+    const agrerarAlCarrito = () => {
+        toast('Se agregaron productos al carrito', {
+            position: "bottom-center",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'colored',
+            transition: Slide,
+        })
+        onAdd(contador)
+    }
     return (
         <>
             <button onClick={agrerarAlCarrito}>

@@ -51,7 +51,7 @@ export const CartProvider = (props) => {
     const totalPrice = () => {
         return carrito.reduce((acum, prod) => acum += (prod.cant * prod.precio), 0)
     }
-    console.log(carrito)
+    
     return (
         <CartContext.Provider value={{carrito, isInCart, addItem, removeItem, emptyCart, getItemQuantity, totalPrice}}>
             {props.children}

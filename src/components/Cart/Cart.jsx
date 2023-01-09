@@ -8,20 +8,17 @@ import deliveryLight from '../../assets/images/delivery-white.svg'
 import devolucionLight from '../../assets/images/return-white.svg'    
 import warrantyLight from '../../assets/images/warranty-white.svg'    
 import trashLight from '../../assets/images/trash-white.svg'    
-// import ItemCount1 from '../ItemCount/ItemCount1'
+import ItemCount1 from '../ItemCount/ItemCount1'
 import Btn1 from '../Buttons/Btn1'
 import { useCartContext } from '../../Context/CartContext'
 import { useDarkModeContext } from '../../Context/DarkModeContext'
 
 const Cart = () => {
-    // const onAdd = (contador) => {
-    //     addItem(contador)
-    // }
+    const {carrito, emptyCart, removeItem, totalPrice, getItemQuantity, addItem} = useCartContext()
     const {darkMode} = useDarkModeContext()
-    const {carrito, emptyCart, removeItem, totalPrice, getItemQuantity} = useCartContext()
     return (
         <>
-            <main className='mt-20 relative'>
+            <main className='mt-20 relative h-screen'>
                 {carrito.length === 0 ?
                 <div className='lg-min:pt-14 flex flex-nowrap min-w-0 flex-col min-h-0 md:pt-8 sm-max:pt-8'>
                     <div className='lg-min:px-10 max-w-[1504px] w-full mx-auto md:px-6 sm-max:px-6'>
@@ -88,7 +85,8 @@ const Cart = () => {
                     <div className='lg-min:px-10 max-w-[1504px] w-full mx-auto mt-12'>
                         <div className='lg-min:-mt-4 flex flex-wrap shrink-0 grow basis-full md:-mt-4 sm-max:-mt-4'>
                             <div className='lg-min:w-2/3 w-full basis-auto shrink-0 grow-0 max-w-full md:w-full sm-max:w-full'>
-                                {carrito.map((prod) => 
+                                {
+                                carrito.map((prod) =>
                                 <div key={prod.id} className='flex flex-nowrap min-w-0 flex-col min-h-0'>
                                 <div>
                                     <div className='-mt-4 flex grow shrink-0 flex-wrap basis-full sm-max:hidden'>
@@ -118,9 +116,9 @@ const Cart = () => {
                                                         <div onClick={() => removeItem(prod.id)} className='flex justify-center items-center w-8 h-8 cursor-pointer'>
                                                             <img src={darkMode ? trashLight : trash} alt="remove" />
                                                         </div>
-                                                        {/* <div className='flex min-h-0 min-w-0'>
-                                                            <ItemCount1 inicial={prod.cant} stock={prod.stock} onAdd={onAdd}/>
-                                                        </div> */}
+                                                        <div className='hidden min-h-0 min-w-0'>
+                                                            <ItemCount1 inicial={prod.cant} stock={prod.stock} onAdd={() => {addItem(prod, prod.cant)}}/>
+                                                        </div>
                                                         <div className='flex flex-nowrap min-w-0 min-h-0 flex-col ml-6'>
                                                             <span className={`${darkMode ? "text-light-gray" : "text-gray-text-secondary"}`}>Cantidad: {prod.cant}</span>
                                                         </div>
@@ -167,7 +165,7 @@ const Cart = () => {
                                                         <img src={darkMode ? trashLight : trash} alt="remove" />
                                                     </div>
                                                     {/* <div className='flex min-h-0 min-w-0'>
-                                                        <ItemCount1 inicial={prod.cant}/>
+                                                        <ItemCount1 inicial={prod.cant} stock={prod.stock} onAdd={() => {addItem(prod, prod.cant)}}/>
                                                     </div> */}
                                                 </div>
                                             </div>
@@ -206,7 +204,7 @@ const Cart = () => {
                                                     </div>
                                                     <div className='flex min-w-0 min-h-0 justify-between mt-1'>
                                                         <span className={`text-sm font-normal ${darkMode ? "text-light-gray" : "text-gray-text-secondary"}`}>Impuestos</span>
-                                                        <span className={`text-sm font-normal ${darkMode ? "text-white" : "text-dark-gray-text"}`}>Se calculan al finalizar la compra</span>
+                                                        <span className={`text-sm font-normal text-right ${darkMode ? "text-white" : "text-dark-gray-text"}`}>Se calculan al finalizar la compra</span>
                                                     </div>
                                                 </div>
                                                 <hr className={`w-full mt-4 px-0 pt-0 ${darkMode ? "text-gray-text-secondary" : "text-light-gray"}`}/>

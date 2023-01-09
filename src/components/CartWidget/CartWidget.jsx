@@ -22,7 +22,7 @@ const CartWidget = () => {
         <>
             <Link to={'/bag'} className='flex cursor-pointer relative'>
                 <img src={darkMode ? cartWhite : cart} alt='cart' onMouseEnter={changeBlue} onMouseLeave={darkMode ? changeWhite : changeDark}/>
-                {getItemQuantity() > 0 && <div className={`rounded-[50%] absolute text-center text-[10px] h-4 w-4 left-2 top-3 flex items-center justify-center font-semibold ${darkMode ? "bg-white text-dark-gray-text" : "bg-dark-gray-text text-white"}`}>{getItemQuantity()}</div>}
+                {getItemQuantity() > 0 && <div className={`rounded-[50%] absolute text-center text-[10px] h-4 w-4 left-2 top-3 flex items-center justify-center font-semibold ${darkMode ? "bg-white text-dark-gray-text" : "bg-dark-gray-text text-white"}`}>{getItemQuantity() > 9 ? "9+" : getItemQuantity()}</div>}
                 
             </Link>
         </>

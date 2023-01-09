@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Proyecto Ecommerce React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+`Clone Tienda Meta`
 
-## Available Scripts
+## Descripción
 
-In the project directory, you can run:
+`Proyecto Final` para el curso de ReactJS de `Coderhouse` (41100).
+La aplicación permite conectarse con una base de datos de `Firestore`.
+Permite seleccionar ciertos productos, visualizar los detalles de los mismos, agregarlos al carrito, solicitar datos de los cliente, simular la compra de los productos y descontar el stock en la base de datos. Al clickear sobre el botón "Finalizar compra", pide llenar un formulario con datos básicos y luego de confirmar se genera un id de orden de compra en firebase donde se guarda con los datos del cliente con los productos que compró.
 
-### `npm start`
+### Tecnologias utilizadas 🛠️
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[React] (https://reactjs.org/) - Framework de Javascript
+[Firestore] (https://firebase.google.com/) - NoSQL Database
+[Tailwindcss] (https://tailwindcss.com/) - Framework de CSS
+[React-Toastify] (https://fkhadra.github.io/react-toastify/introduction/) - Framework de CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Descargar y correr el proyecto
 
-### `npm test`
+### Instalación 🔧
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para descargar el proyecto pueden descargar el repositorio en formato zip_
 
-### `npm run build`
+1 - Ir a "Code" -> "Dowload Zip"
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2 - Descomprimir el archivo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3 - En la carpeta donde se encuentra en "package.json" ejecutar en una terminal:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `npm install`
 
-### `npm run eject`
+4 - Una vez finalizado, ejecutar:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### `npm run start`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Se abre una pestaña del navegador en el puerto 3000:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Sino copiar esta URL y pegarla en el navegador: `http://localhost:3000`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Instalación con git clone 🔧
 
-## Learn More
+Se puede clonar el repositorio, ingresando a una terminal y ejecutando: https://github.com/luicabref97/proyecto-react_coderhouse-41100.git
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Luego continuar con el paso 3 de la otra forma
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Despliegue
 
-### Code Splitting
+El proyecto fue desplegado en Vercel para navegarlo.
+https://rodolfosbeerandburguer.vercel.app/ La pagina esta adaptada para que se visualice correctamente en todos los dispositivos.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Screenshots
 
-### Analyzing the Bundle Size
+![Alt text](https://github.com/martin086/react-app/blob/master/docs/Screenshot_1.png "Home")
+![Alt text](https://github.com/martin086/react-app/blob/master/docs/Screenshot_2.png "Category")
+![Alt text](https://github.com/martin086/react-app/blob/master/docs/Screenshot_3.png "ItemDetail")
+![Alt text](https://github.com/martin086/react-app/blob/master/docs/Screenshot_4.png "Cart")
+![Alt text](https://github.com/martin086/react-app/blob/master/docs/Screenshot_5.png "Checkout")
+![Alt text](https://github.com/martin086/react-app/blob/master/docs/Screenshot_6.png "OC_Confirmed")
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

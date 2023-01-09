@@ -7,6 +7,7 @@ import Cart from './Cart/Cart'
 import Checkout from './Checkout/Checkout'
 import { useDarkModeContext } from '../Context/DarkModeContext'
 import { ToastContainer } from 'react-toastify'
+import Footer from './Footer/Footer'
 
 
 const App = () => {
@@ -14,7 +15,7 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <div className={`${darkMode ? "bg-dark-blue" : "bg-white"} h-screen w-full`}>
+        <div className={`${darkMode ? "bg-dark-blue" : "bg-white"} h-full w-full`}>
             <Navbar/>
             <Routes>
               <Route path='/' element={<ItemListContainer greeting={"Las mejores ofertas del año"}/>}/>
@@ -23,6 +24,7 @@ const App = () => {
               <Route path='/bag' element={<Cart/>}/>
               <Route path='/checkout' element={<Checkout/>}/>
             </Routes>
+            <Footer/>
             <ToastContainer/>
         </div>
       </BrowserRouter>

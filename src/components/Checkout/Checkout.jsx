@@ -1,5 +1,6 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+//import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import delivery from '../../assets/images/delivery.svg'
 import card from '../../assets/images/card.svg'
@@ -18,7 +19,9 @@ const Checkout = () => {
     const {darkMode} = useDarkModeContext()
     const {totalPrice, carrito, emptyCart, getItemQuantity} = useCartContext()
     const datosFormulario = React.useRef()
-    let navigate = useNavigate()
+    //let navigate = useNavigate()
+    const [orderId, setOrderId] = useState("");
+
     const consultarFormulario = (e) => {
         e.preventDefault()
         const datForm = new FormData(datosFormulario.current)
@@ -31,17 +34,22 @@ const Checkout = () => {
                     prodBDD.stock -= prodCarrito.cant
                     updateProducto(prodCarrito.id, prodBDD)
                 } else {
-                    console.log("Stock no valido")
+                    toast.error(`El producto ${prodBDD.nombre} no posee stock disponible`)
+                    emptyCart()
                 }
             })
         })
 
-        createOrdenCompra(cliente, totalPrice(), new Date().toISOString().slice(0, 10)).then(ordenCompra => {
+        const productos = carrito.map(item => ({id: item.id, nombre: item.nombre, precio: item.precio, cantidad: item.cant}))
+        const fechaCompleta = new Date()
+        const fecha = `${fechaCompleta.getDate()}-${fechaCompleta.getMonth() + 1}-${fechaCompleta.getFullYear()}"  "${fechaCompleta.getHours()}:${fechaCompleta.getMinutes()}:${fechaCompleta.getSeconds()}`
+
+        createOrdenCompra(cliente, productos, totalPrice(), fecha).then(ordenCompra => {
             getOrdenCompra(ordenCompra.id).then(item => {
-                toast.success(`Muchas gracias por su compra, su orden es ${item.id}`)
+                setOrderId(item.id);
                 emptyCart()
                 e.target.reset()
-                navigate("/")
+                //navigate("/")
             }).catch(error => {
                 toast.error("Su orden no fue generada con exito")
                 console.error(error)
@@ -51,8 +59,9 @@ const Checkout = () => {
 
     return (
         <>
-            <main className='mt-20 relative'>
-                <div className={`lg-min:px-10 lg-min:py-12 lg-min:max-w-[1504px] w-full mx-auto md:px-6 md:py-6 sm-max:px-6 sm-max:py-6 ${darkMode ? "bg-dark-blue" : "bg-white"}`}>
+            <main className={`mt-20 relative ${!orderId ? 'h-full' : 'h-screen'}`}>
+                {!orderId ? 
+                    <div className={`lg-min:px-10 lg-min:py-12 w-full md:px-6 md:py-6 sm-max:px-6 sm-max:py-6 ${darkMode ? "bg-dark-blue" : "bg-white"}`}>
                     <div className='flex flex-wrap shrink-0 grow basis-full md:-mx-2 sm-max:-mx-2 justify-center'>
                         <div className='lg-min:w-[41.666667%] lg-min:mt-6 w-full basis-auto shrink-0 grow-0 max-w-full md:mt-6 md:px-2 md:w-full sm-max:mt-6 sm-max:px-2 sm-max:w-full'>
                             <div className='mb-8 flex items-center justify-between'>
@@ -107,10 +116,10 @@ const Checkout = () => {
                                         </div>
                                         <div className='flex flex-nowrap min-w-0 flex-row min-h-0 mt-6'>
                                             <label className='flex items-center rounded' htmlFor="check2">
-                                                    <input className='relative cursor-pointer h-6 w-6 min-w-[24px] pointer-events-auto rounded bg-blue' type="checkbox" name="check2"/>
-                                                    <div className='flex cursor-pointer min-h-[24px] items-center ml-4'>
-                                                        <span className={`text-base font-normal ${darkMode ? "text-white" : "text-dark-gray-text"}`}>Quiero recibir novedades del pedido por WhatsApp.</span>
-                                                    </div>
+                                                <input className='relative cursor-pointer h-6 w-6 min-w-[24px] pointer-events-auto rounded bg-blue' type="checkbox" name="check2"/>
+                                                <div className='flex cursor-pointer min-h-[24px] items-center ml-4'>
+                                                    <span className={`text-base font-normal ${darkMode ? "text-white" : "text-dark-gray-text"}`}>Quiero recibir novedades del pedido por WhatsApp.</span>
+                                                </div>
                                             </label>
                                         </div>
                                     </div>
@@ -120,7 +129,7 @@ const Checkout = () => {
                                         <h3 className={`lg-min:text-2xl md:text-2xl sm-max:text-xl ${darkMode ? "text-white" : "text-dark-gray-text"}`}>¿Cómo quieres obtener el pedido?</h3>
                                     </div>
                                     <div className='mt-6 flex whitespace-nowrap relative pl-px'>
-                                        <label className='cursor-pointer touch-manipulation min-w-0 list-none -ml-px min-h-0 shrink-0 z-[1] outline-none basis-0 relative grow no-underline' htmlFor='entrega'>
+                                        <label className='cursor-pointer touch-manipulation min-w-0 list-none -ml-px min-h-0 shrink-0 outline-none basis-0 relative grow no-underline' htmlFor='entrega'>
                                             <input className='cursor-pointer w-full h-full z-10 absolute appearance-none peer' type="radio" defaultChecked name="entrega" value={"A domicilio"}/>
                                             <div className={`md-min:pb-[19px] md-min:pt-[22px] flex border justify-center items-center relative peer-checked:border-b-4 border-light-gray peer-checked:border-b-blue px-10 sm-max:pb-[11px] sm-max:pt-3.5 font-bold text-xs ${darkMode ? "text-white peer-checked:text-white" : "text-dark-gray-text peer-checked:text-blue"}`}>
                                                 Envío
@@ -239,6 +248,17 @@ const Checkout = () => {
                         }
                     </div>
                 </div>
+                :
+                <div className={`lg-min:px-10 lg-min:py-12 lg-min:max-w-[1504px] w-full mx-auto md:px-6 md:py-6 sm-max:px-6 sm-max:py-6 ${darkMode ? "bg-dark-blue" : "bg-white"}`}>
+                    <div className='flex flex-wrap flex-col items-center shrink-0 grow basis-full md:-mx-2 sm-max:-mx-2 justify-center'>
+                    <h2 className={`lg-min:text-4xl lg-min:font-normal md:text-3xl md:font-normal sm-max:text-2xl sm-max:font-normal sm-max: outline-none ${darkMode ? "text-white" : "text-dark-gray-text"}`}>Gracias por tu compra!</h2>
+                    <div className={`bg-purple rounded-lg p-4 mt-6 text-white w-full text-center`}>Orden generada: <span className='font-bold'>{orderId}</span></div>
+                    <Link to={'/'} className='mt-6'>
+                        <Btn1 text={'Ir al inicio'}/>
+                    </Link>
+                    </div>
+                </div>
+                }
             </main>
         </>
     )
